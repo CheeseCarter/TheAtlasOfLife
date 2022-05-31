@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Atlas of Life</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
+
+  <body>
+
+    <div class="topnav">
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="about.html">About</a>
+    </div>
+
+    <div id="Iframe-Master-CC-and-Rs" class="set-margin set-padding set-border center-block-horiz">
+      <div class="responsive-wrapper 
+      responsive-wrapper-wxh-572x612" style="-webkit-overflow-scrolling: touch; overflow: auto;">
+        <iframe src="https://www.slideshare.net/slideshow/embed_code/key/pi8y9XnhuIhM8H"></iframe>
+      </div>
+    </div>
+
+    <div class="particle_container">
+        <canvas class="background"></canvas>
+    </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+   <script>
+     window.onload = function() {
+        Particles.init({
+          selector: ".background",
+          color: "#000000",
+          maxParticles: 500,
+          connectParticles: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              options: {
+                maxParticles: 300
+              }
+            }, {
+              breakpoint: 375,
+              options: {
+                maxParticles: 100
+              }
+            }
+          ]
+        });
+      };
+   </script>
+  </body>
+</html>
